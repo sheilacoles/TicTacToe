@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B5F2405-6CE8-4D12-800B-C615CDC2A5C5}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		site.css = site.css
+		site.js = site.js
+		SpecRunner.html = SpecRunner.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{8C24DE1B-DB8E-4FFB-9202-8DEC56E5A989}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jasmine-3.5.0", "jasmine-3.5.0", "{27412249-77AE-48E2-A7B2-8205A6F364BB}"
+	ProjectSection(SolutionItems) = preProject
+		lib\jasmine-3.5.0\boot.js = lib\jasmine-3.5.0\boot.js
+		lib\jasmine-3.5.0\jasmine-html.js = lib\jasmine-3.5.0\jasmine-html.js
+		lib\jasmine-3.5.0\jasmine.css = lib\jasmine-3.5.0\jasmine.css
+		lib\jasmine-3.5.0\jasmine.js = lib\jasmine-3.5.0\jasmine.js
+		lib\jasmine-3.5.0\jasmine_favicon.png = lib\jasmine-3.5.0\jasmine_favicon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "spec", "spec", "{74F1ED9F-0F23-464E-9776-E837DEF5B25E}"
+	ProjectSection(SolutionItems) = preProject
+		siteSpecs.js = siteSpecs.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C24DE1B-DB8E-4FFB-9202-8DEC56E5A989} = {1B5F2405-6CE8-4D12-800B-C615CDC2A5C5}
+		{27412249-77AE-48E2-A7B2-8205A6F364BB} = {8C24DE1B-DB8E-4FFB-9202-8DEC56E5A989}
+		{74F1ED9F-0F23-464E-9776-E837DEF5B25E} = {1B5F2405-6CE8-4D12-800B-C615CDC2A5C5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7BD74EC-E3B9-4C34-91E5-54CF22EA39AB}
+	EndGlobalSection
+EndGlobal

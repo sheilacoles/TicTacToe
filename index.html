@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="site.js"></script>
+    <link rel="stylesheet" href="site.css" />
+    <title></title>
+</head>
+<body>
+    <script>
+        $(document).ready(run)
+    </script>
+    <div id="gameContainer">
+        <div class="svg-container">
+            <svg class="win0 hide" height="300" width="300">
+                <line x1="55" y1="5" x2="55" y2="295" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+            <svg class="win1 hide" height="300" width="300">
+                <line x1="170" y1="5" x2="170" y2="295" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+            <svg class="win2 hide" height="300" width="300">
+                <line x1="245" y1="5" x2="245" y2="295" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+            <svg class="win3 hide" height="300" width="300">
+                <line x1="5" y1="55" x2="295" y2="55" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+            <svg class="win4 hide" height="300" width="300">
+                <line x1="5" y1="170" x2="295" y2="170" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+            <svg class="win5 hide" height="300" width="300">
+                <line x1="5" y1="245" x2="295" y2="245" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+            <svg class="win6 hide" height="300" width="300">
+                <line x1="5" y1="5" x2="295" y2="295" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+            <svg class="win7 hide" height="300" width="300">
+                <line x1="295" y1="5" x2="5" y2="295" style="stroke:rgb(255,0,0);stroke-width:10" />
+            </svg>
+        </div>
+
+            <table id="ticTacToeTable">
+                <tr>
+                    <td id="cell1" class="cell odd">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                    <td id="cell2" class="cell even">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                    <td id="cell3" class="cell odd">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="cell4" class="cell even">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                    <td id="cell5" class="cell odd">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                    <td id="cell6" class="cell even">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="cell7" class="cell odd">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                    <td id="cell8" class="cell even">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                    <td id="cell9" class="cell odd">
+                        <svg class="hide cross" height="100" width="100">
+                            <line x1="5" y1="5" x2="95" y2="95" style="stroke:rgb(255,0,0);stroke-width:4" />
+                            <line x1="5" y1="95" x2="95" y2="5" style="stroke:rgb(255,0,0);stroke-width:4" />
+                        </svg>
+                        <svg class="hide circle" width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill-opacity="0.0" />
+                        </svg>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input type="button" id="reset" value="reset" />
+</body>
+</html>
